@@ -4,15 +4,15 @@
   <div class="nav">
     <div class="top">
       <!-- 导航栏 -->
-       <div><a>首页</a></div>
-       <div><a>文章</a></div>
-       <div><a>相册</a></div>
-       <div><a>api文档</a></div>
-       <div><a>关于</a></div>
+       <router-link to="/"><div>首页</div></router-link>
+       <router-link to="/airticle"><div>文章</div></router-link> 
+       <router-link to="/camera" ><div>相册</div></router-link> 
+       <router-link to="/api"><div>api文档</div></router-link>
+       <router-link to="/about"><div>关于</div></router-link> 
     </div>
     <!-- 内容切换 -->
     <div>
-      <!-- <router-view></router-view> -->
+      <router-view/>
     </div>
   </div>
   <!-- 备案信息 -->
